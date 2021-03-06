@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+</head>
+<link rel="stylesheet" href="materialize/css/materialize.min.css">
+<body>
+    <nav class="red darken-2">
+        <div class="nav-wrapper">
+          <a class="brand-logo center">La tienda del joako</a>
+        </div>
+    </nav>
+      <div class="row">
+        <div class="col s4 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://assets.change.org/photos/7/kb/uo/DEkBuOMKjWzNZym-800x450-noPad.jpg?1509323914" alt="Crocs del rayo Mcqueen" width="100" height="300">
+            </div>
+            <div class="card-content">
+              <p>Unos crocs del rayo mcqueen</p> 
+              <label>Agregar al carrito</label>
+              <select class="browser-default" id="rm" onchange="total();">
+                <option value="" disabled selected>Cantidad</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>         
+            </div>
+            <div class="card-action">
+              <a>Precio: $5000</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71MvedzeJES._AC_UL1500_.jpg" width="100" height="300">
+            </div>
+            <div class="card-content">
+              <p>Unos crocs de bob esponja</p>
+              <label>Agregar al carrito</label>
+              <select class="browser-default" id="be" onchange="total();">
+                <option value="" disabled selected>Cantidad</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select> 
+            </div>
+            <div class="card-action">
+              <a>Precio: $3500</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://i.pinimg.com/originals/68/d1/43/68d143f908431df38e3f84899b0bf344.jpg" alt="Crocs del rayo Mcqueen" width="100" height="300">
+            </div>
+            <div class="card-content">
+              <p>Unos crocs de tacon</p>
+              <label>Agregar al carrito</label>
+              <select class="browser-default" id="ct" onchange="total();">
+                <option value="" disabled selected>Cantidad</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select> 
+            </div>
+            <div class="card-action">
+              <a>Precio: $7200</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h2 id="total">Total: 0</h2>
+      </div>
+    <div class="row">
+      <h2 class="red-text text-darken-2">Preguntas</h2>
+    </div>
+    <ul>
+      <li>
+        <strong>
+          ¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+        </strong></br>Para que no se generen errores.
+      </li>
+      <li>
+        <strong>
+          ¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?
+        </strong></br>Deshabilitando javascript en el navegador
+      </li>
+      <li>
+        <strong>
+          Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?
+        </strong></br>No es recomendable deshabilitar javascript.
+      </li>
+    </ul>
+</body>
+<script src="materialize/js/materialize.min.js"></script>
+<script src="tienda.js"></script>
+</html>
