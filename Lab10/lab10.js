@@ -1,4 +1,5 @@
 const musica = [];
+const filesystem = require('fs');
 const requestHandler = (request, response) => {
     console.log("Servidor iniciado");
     console.log(request.url);
@@ -29,6 +30,11 @@ const requestHandler = (request, response) => {
             console.log(nueva_cancion);
             response.statusCode = 302;
             response.setHeader('Location', '/musica');
+            let canstring = "";
+            for(let can of musica){
+                canstring += can + " "; 
+            }
+            filesystem.writeFileSync('canciones.txt', canstring);
             return response.end();
         });
     }else if (request.url === "/musica"){
