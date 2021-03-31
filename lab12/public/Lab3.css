@@ -1,0 +1,31 @@
+strong {
+    color:rgb(231, 123, 145);
+}
+.subtitulos {
+    text-align: center;
+    background: rgb(58, 57, 57);
+    color: mintcream;
+    font: italic;
+    padding: .5em;
+}
+h1, h4 {
+    text-align: center;
+}
+h1 {
+    background: rgb(58, 57, 57);
+    color: mintcream;
+    font: italic;
+    padding: 1.5em;
+}
+ul {
+    line-height: 1.5;
+}
+.centrado {
+    margin: 0 auto;
+    max-width: 50em;
+}
+footer{
+    text-align: center;
+    background: navajowhite;
+    padding: .2em;
+}

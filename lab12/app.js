@@ -11,11 +11,13 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 const rutaMusica = require('./routes/canciones');
+const rutaTienda = require('./routes/tienda');
 
 app.use('/musica', rutaMusica);
+app.use('/tienda', rutaTienda);
 
 app.get('/', (request, response, next) => {
-    response.send('<h1>Joaquin</h1>'); 
+    response.render('joaquin'); 
 });
 
 app.use( (request, response, next) => {
