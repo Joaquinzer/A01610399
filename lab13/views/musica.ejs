@@ -1,0 +1,13 @@
+<%- include('partials/head.ejs')%>
+<% if (canciones.length > 0) { %>
+    <ul class="collection">
+        <% for (let cancion of canciones) { %>
+            <li class="collection-item"><%= cancion.titulo %></li>
+        <% } %>
+    </ul>
+<% } else { %>
+    <h1>No hay canciones</h1>
+<% } %> 
+<button><a href="/musica/agregar">Agregar mas canciones</a></button>
+<script src="materialize/js/materialize.min.js"></script>
+</body>
