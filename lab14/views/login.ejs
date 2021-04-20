@@ -1,0 +1,22 @@
+<%- include('partials/head.ejs') %>
+<link rel="stylesheet" href="lab5.css">
+<main class="container">
+    <h1>Crea tu usuario</h1>
+    <form action="login" method="POST" id="form">
+        <div>
+            <input id="usuario" type="text" placeholder="Username" required>
+        </div>
+        <div>
+            <input id="contra" type="password" placeholder="Password" required>
+        </div>
+        <div>
+            <input id="val" type="password" placeholder="Confirm Password" required>
+        </div><br/>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right"></i>
+        </button>
+    </form>
+</main>
+</body>
+<script src="Lab5.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
